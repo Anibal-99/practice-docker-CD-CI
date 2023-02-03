@@ -23,8 +23,8 @@ En conjunto con esta guia lo que hice fue seguir investigando para lograr crear 
 ## Herramientas utilizadas
 - **Route 53**: Este es el servicio donde se define toda la configuracion de DNS. 
 - **Load balancer**: Distribuye las diferentes solicitudes que van llegando en las instancias de EC2 que estan corriendo las aplicaciones. Esto que se conoce como load balancer, es lo que usamos como NGINX, un usuario envia un a peticion al load balancer y lo distribuye en los servidores backend.
-- **Amazon DynamoDB**:Servicio para base de datos de NoSql. Diseñada para ejecutar aplicaciones de alto rendimiento a cualquier escala, ofrece seguridad, copias continuas, entre muchas otras.
-- **AmazonRDS**:Servicio de administracion de base de datos relacional, pueden utilizarse seis motores de bases de datos, MySql, MariaDB, postgreSQL, Oracle, microsoft SQL server y Amazon Aurora. 
+- **Amazon DynamoDB**: Servicio para base de datos de NoSql. Diseñada para ejecutar aplicaciones de alto rendimiento a cualquier escala, ofrece seguridad, copias continuas, entre muchas otras.
+- **AmazonRDS**: Servicio de administracion de base de datos relacional, pueden utilizarse seis motores de bases de datos, MySql, MariaDB, postgreSQL, Oracle, microsoft SQL server y Amazon Aurora. 
 - **Auto Scaling**: Si la carga aumenta en las instancias de EC2, entonces puede escalar horizontalmente automanticamente y si la carga disminuye puede hacerlo verticalmente. Sirve para aumentar la cantidad de servidores de aplicacion ayudando asi a mantener la disponibilidad. 
 - **Bucket**: Brinda seguridad y disponibilidad de los datos. Sirve de intermediario entre las aplicaciones y la base de datos relacional y la no relacional.
 - **ElastiCache**: Servicio que ayuda a aumentar el rendimiento en las busquedas de elementos que son bastante comunes. Esto ayuda a reducir la exigencia sobre la base de datos y aumenta la escalabilidad de la aplicacion.
