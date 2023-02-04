@@ -1,4 +1,5 @@
-on: push # cuando se haga un push lo que hace es correr este trabajo y este trabajo se llama deploy
+on:
+push: # cuando se haga un push lo que hace es correr este trabajo y este trabajo se llama deploy
 name: deploy
 jobs:
   deploy:
