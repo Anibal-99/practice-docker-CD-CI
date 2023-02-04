@@ -29,6 +29,7 @@ jobs:
           push: true
           repository: mrhalvarez/craftech
           dockerfile: prueba-3/Dockerfile
+          tags: latest
 
       - name: construir el docker compose
         run: docker-compose -f ./prueba-3/docker-compose.yml up -d
