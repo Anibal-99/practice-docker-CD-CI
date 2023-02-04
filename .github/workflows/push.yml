@@ -25,6 +25,8 @@ jobs:
         uses: docker/build-push-action@v2
 
         with:
+          context: ./prueba-3
+          push: true
           repository: mrhalvarez/craftech
           dockerfile: prueba-3/Dockerfile
 
