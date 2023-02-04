@@ -1,9 +1,6 @@
-on:
-  push:
-    branches:
-    - 'master'
-    paths:
-      - 'prueba-3/html/index.html'
+on: [push]
+paths:
+  - 'prueba-3/html/index.html'
 
 jobs:
   deploy:
