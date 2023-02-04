@@ -26,7 +26,7 @@ jobs:
         with:
           context: ./prueba-3
           push: true
-          tags: latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/nginx-ci:${{ github.sha }}
 
       - name: construir el docker compose
         run: docker-compose -f ./prueba-3/docker-compose.yml up -d
