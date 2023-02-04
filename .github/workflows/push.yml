@@ -11,8 +11,6 @@ jobs: # definimos el trabajo que debera hacer al momento de hacer un push
     steps: # luego vamos a correr diferentes pasos dentro de esa maquina virtual y estos pasos van a ser las acciones
       - name: Traer el ultimo commit
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Configurar Docker Buildx
         uses: docker/setup-buildx-action@v2
