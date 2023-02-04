@@ -1,7 +1,4 @@
 on: [push]
-paths:
-  - 'prueba-3/html/index.html'
-
 jobs:
   deploy:
     name: deploy to cluster
