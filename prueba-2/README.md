@@ -12,7 +12,7 @@ repositorio se debe incluir el código de la aplicación y un archivo README.md
 con instrucciones detalladas para compilar y desplegar la aplicación, tanto en
 una PC local como en la nube (AWS o GCP).
 
-## Resolución
+## Solución
 Debemos colocarnos dentro del directorio prueba-2, donde encontraremos el docker-compose para ejecutar.
 
 Para levantar la aplicacion ejecutaremos los siguientes comandos;
