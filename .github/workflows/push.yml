@@ -1,16 +1,25 @@
-on: [push]
+name: ci
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'prueba-3/html/index.html'
+
 jobs:
-  deploy:
-    name: deploy to cluster
+  docker-nginx:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: build and push to docker
-      uses: docker/build-push-action@v4
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: ${{ github.pruebaTecnica-Craftech }}
-        tag-with-ref: true
-        tag-with-sha: true
-        tags: ${{ github.sha }}
+      - name: Entrar en rama
+        uses: actions/checkout@v2
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME}}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: mrhalvarez/craftech
+          dockerfile: prueba-3/Dockerfile
+
+      - name: construir el docker compose
+        run: docker-compose -f ./prueba-3/docker-compose.yml up -d
