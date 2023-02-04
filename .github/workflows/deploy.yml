@@ -1,5 +1,8 @@
 on:
-push:
+  push:
+    paths:
+      - 'prueba-3/html/index.html'
+
 jobs:
   deploy:
     name: deploy to cluster
@@ -9,6 +12,8 @@ jobs:
     - name: build and push to docker
       uses: docker/build-push-action@v1
       with:
+        context: ./prueba-3
+        push: true
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: ${{ github.pruebaTecnica-Craftech }}
