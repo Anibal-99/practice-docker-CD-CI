@@ -2,9 +2,9 @@ name: ci
 on:
   push:
     branches:
-      - 'master'
+      - master
     paths:
-      - 'prueba-3/html/index.html'
+      - prueba-3/html/index.html
 
 jobs:
   docker-nginx:
