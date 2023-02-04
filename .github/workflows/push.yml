@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - 'Master'
+    - 'master'
     paths:
       - 'prueba-3/html/index.html'
 
