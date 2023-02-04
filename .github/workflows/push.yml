@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - prueba-3/html/index.html
 
 jobs:
   docker-nginx:
