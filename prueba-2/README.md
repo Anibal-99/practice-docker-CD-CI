@@ -1,4 +1,4 @@
-# Prueba-2 
+# Prueba-2
 **Despliegue de una aplicación Django y React.js**
 - Elaborar
 el deployment dockerizado de una aplicación en django (backend) con frontend
@@ -21,7 +21,7 @@ Para levantar la aplicacion ejecutaremos los siguientes comandos;
 ```
 docker-compose build
 ```
-- Luego para levantar los contedores se hace con el comando; 
+- Luego para levantar los contedores se hace con el comando;
 ```
 docker-compose up
 ```
@@ -31,16 +31,20 @@ docker-compose up --build
 ```
 Para ver la aplicacion corriendo debemos ingresar en el navegador y indicar nuestro host con los puertos correspondientes.
 
-Para el backend.
+- Para el backend.
 ```
 127.0.0.1:8000
 ```
-Para el frontend.
+- Para el frontend.
 ```
 127.0.0.1:3000
 ```
+Si desea realizar algun comando en el backend en su aplicacion mientras esta levantada, puede hacerlo con el siguiente comando;
+```
+docker-compose run --rm backend sh -c "comando"
+```
 ## Observaciones
-Para llevar a cabo el ejecicio tuve que investigar como se creaba el Dockerfile correspondiente para el fronend, ya que anteriormente nunca habia echo uno. Para el lado del backend ya habia dockerizado mis aplicaciones personales, con lo que ya sabia como hacerlo. 
+Para llevar a cabo el ejecicio tuve que investigar como se creaba el Dockerfile correspondiente para el fronend, ya que anteriormente nunca habia echo uno. Para el lado del backend ya habia dockerizado mis aplicaciones personales, con lo que ya sabia como hacerlo.
 
 Para aprender sobre el Dockerfile del frontend utilice el siguiente post, [How to Dockerize a Django and React Application](https://www.honeybadger.io/blog/docker-django-react/)
 
