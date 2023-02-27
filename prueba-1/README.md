@@ -36,7 +36,3 @@ En conjunto con esta guia lo que hice fue seguir investigando para lograr crear 
 - [Auto Scaling](https://www.ilimit.com/blog/como-funciona-autoscaling/)
 - [Web Application Architecture](https://medium.com/geekculture/web-application-architecture-800d3ecd8019)
 - [Microservicios](https://aws.amazon.com/es/microservices/)
-
-## Microservicios
-Adicionalmente en la prueba se menciona que el backend debe consumir 2 microservicios. Como no encontraba una informacion que me diera confianza y que entendiera como se diagrama decidi no incluirlo. De todas maneras los intente diagramar, adjunto el link por si se desea visualizar como lo implemente.
-- [Implementacion de microservicio](https://lucid.app/lucidchart/0c5a3584-411d-4bf9-bddd-95a1d6f799c2/edit?viewport_loc=1748%2C12%2C3214%2C1646%2CeNbqbEM6f5NI&invitationId=inv_0ecc56c4-2440-4f18-8aa4-bea2a03d3c10)
